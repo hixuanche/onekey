@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneKey 硬體錢包折扣碼｜專屬 5% 優惠碼 LHQKNQ</title>
+    <meta name="description" content="使用專屬邀請碼 LHQKNQ 購買 OneKey 硬體錢包可享 5% 折扣，支援多鏈資產，最高安全等級 EAL 6+ 晶片，立即前往官網購買。">
+    <meta property="og:title" content="OneKey 硬體錢包折扣碼｜專屬 5% 優惠碼 LHQKNQ">
+    <meta property="og:description" content="使用專屬邀請碼 LHQKNQ 購買 OneKey 硬體錢包可享 5% 折扣，支援多鏈資產，最高安全等級 EAL 6+ 晶片，立即前往官網購買。">
+    <meta property="og:image" content="https://i.postimg.cc/nVXZz9DH/One-Key-Pro-Main-Image-Black-01.png">
+    <meta property="og:url" content="https://onekey.so/r/LHQKNQ">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'onekey-green': '#4ff55f',
+                        'dark-bg': '#0A0A0A',
+                        'dark-secondary': '#121212',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0A;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: radial-gradient(circle at center, rgba(79, 245, 95, 0.15) 0%, rgba(10, 10, 10, 0) 70%);
+        }
+        
+        .discount-code {
+            background: rgba(79, 245, 95, 0.1);
+            border: 1px solid #4ff55f;
+            letter-spacing: 2px;
+            position: relative;
+        }
+        
+        .feature-icon {
+            background: rgba(79, 245, 95, 0.1);
+        }
+        
+        .cta-button:hover {
+            box-shadow: 0 0 20px rgba(79, 245, 95, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .primary-cta-button {
+            box-shadow: 0 0 15px rgba(79, 245, 95, 0.3);
+        }
+        
+        .primary-cta-button:hover {
+            box-shadow: 0 0 25px rgba(79, 245, 95, 0.6);
+            transform: translateY(-3px);
+        }
+        
+        .product-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .copy-tooltip {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        
+        .copy-tooltip.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header with Logo -->
+    <header class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://i.postimg.cc/vmYxFZjJ/onekey-logotype-solid-green-on-black-bg-2x.png" alt="OneKey Logo" class="h-12 md:h-14">
+        </div>
+        <div>
+            <a href="https://onekey.so/r/LHQKNQ" target="_blank" rel="nofollow noopener noreferrer" class="text-onekey-green hover:text-white transition-colors duration-300 text-sm">官方網站</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 pt-12 pb-24 md:pt-20 md:pb-32 relative gradient-bg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-onekey-green leading-tight">
+                OneKey 硬體錢包 5% 折扣
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                使用我的專屬邀請碼購買 OneKey 硬體錢包，即可享有 5% 折扣
+            </p>
+            
+            <!-- Discount Code with Copy Function -->
+            <div class="mb-10 flex flex-col items-center">
+                <p class="text-sm text-gray-400 mb-2">專屬邀請碼</p>
+                <div id="discountCode" class="discount-code py-4 px-8 rounded-lg text-2xl md:text-3xl font-bold text-onekey-green mb-2 cursor-pointer" onclick="copyDiscountCode()">
+                    LHQKNQ
+                    <span class="copy-tooltip" id="copyTooltip">點擊複製</span>
+                </div>
+                <p class="text-xs text-gray-500">點擊代碼可複製 · 購買時輸入此代碼即可享有折扣</p>
+            </div>
+            
+            <!-- Primary CTA Button -->
+            <a href="https://onekey.so/r/LHQKNQ" target="_blank" rel="nofollow noopener noreferrer" class="primary-cta-button inline-block bg-onekey-green text-dark-bg font-bold text-lg py-4 px-10 rounded-lg transition-all duration-300 hover:bg-opacity-90">
+                立即前往官網購買
+            </a>
+        </div>
+        
+        <!-- Product Image -->
+        <div class="mt-16 md:mt-24 max-w-4xl mx-auto relative">
+            <div class="flex justify-center">
+                <img src="https://i.postimg.cc/sx7NWzzJ/One-Key-Pro-Showcase-Black-on-a-metallic-background.png" alt="OneKey Hardware Wallet" class="w-full max-w-lg floating-animation">
+            </div>
+            <div class="absolute -bottom-16 left-1/2 transform -translate-x-1/2 scroll-indicator">
+                <svg class="w-6 h-6 text-onekey-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Introduction -->
+    <section class="container mx-auto px-4 py-16 md:py-24">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                <span class="text-onekey-green">安全</span>儲存你的數位資產
+            </h2>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                OneKey 是去中心化多鏈硬體錢包，安全儲存你的數位資產
+            </p>
+        </div>
+        
+        <!-- Product Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="product-card p-6 rounded-xl text-center">
+                <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-6 h-6 text-onekey-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">開源安全</h3>
+                <p class="text-gray-400 text-sm">完全開源的硬體錢包，安全透明，值得信賴</p>
+            </div>
+            
+            <div class="product-card p-6 rounded-xl text-center">
+                <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-6 h-6 text-onekey-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">支援多鏈資產</h3>
+                <p class="text-gray-400 text-sm">支援比特幣、以太坊等多種主流加密貨幣</p>
+            </div>
+            
+            <div class="product-card p-6 rounded-xl text-center">
+                <div class="feature-icon w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-6 h-6 text-onekey-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">隨時隨地管理資產</h3>
+                <p class="text-gray-400 text-sm">簡單易用的操作界面，輕鬆管理你的數位資產</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="container mx-auto px-4 py-16 md:py-24 bg-dark-secondary">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        <span class="text-onekey-green">OneKey</span> 硬體錢包
+                    </h2>
+                    <p class="text-gray-300 mb-8">
+                        OneKey 硬體錢包採用 EAL 6+ 安全晶片，提供最高級別的安全保障。私鑰永不離開設備，確保你的數位資產安全無虞。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-onekey-green bg-opacity-10 p-2 rounded-full mr-4">
+                                <svg class="w-5 h-5 text-onekey-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">高安全性</h3>
+                                <p class="text-sm text-gray-400">EAL 6+ 安全晶片，私鑰永不離開設備</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-onekey-green bg-opacity-10 p-2 rounded-full mr-4">
+                                <svg class="w-5 h-5 text-onekey-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">簡單易用</h3>
+                                <p class="text-sm text-gray-400">直覺操作界面，新手也能輕鬆上手</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-onekey-green bg-opacity-10 p-2 rounded-full mr-4">
+                                <svg class="w-5 h-5 text-onekey-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">多鏈支援</h3>
+                                <p class="text-sm text-gray-400">支援 BTC、ETH、SOL 等多種主流加密貨幣</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a href="https://onekey.so/r/LHQKNQ" target="_blank" rel="nofollow noopener noreferrer" class="cta-button inline-block bg-onekey-green text-dark-bg font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-opacity-90">
+                            了解更多產品細節
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://i.postimg.cc/nVXZz9DH/One-Key-Pro-Main-Image-Black-01.png" alt="OneKey Pro" class="rounded-lg w-full">
+                    <img src="https://i.postimg.cc/FFwvJFy0/One-Key-Pro-Main-Image-Black-02.png" alt="OneKey Pro" class="rounded-lg w-full">
+                    <img src="https://i.postimg.cc/4xgTB8Fd/One-Key-Pro-Main-Image-Black-03.png" alt="OneKey Pro" class="rounded-lg w-full">
+                    <img src="https://i.postimg.cc/zXWrwm76/One-Key-Pro-Main-Image-Black-04.png" alt="OneKey Pro" class="rounded-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="container mx-auto px-4 py-16 md:py-24 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                準備好保護你的數位資產了嗎？
+            </h2>
+            <p class="text-gray-300 mb-6">
+                別忘了使用專屬折扣碼，立即享有 5% 優惠
+            </p>
+            <div id="finalDiscountCode" class="discount-code py-4 px-8 rounded-lg text-2xl md:text-3xl font-bold text-onekey-green mb-6 inline-block cursor-pointer" onclick="copyFinalDiscountCode()">
+                LHQKNQ
+                <span class="copy-tooltip" id="finalCopyTooltip">點擊複製</span>
+            </div>
+            <div class="mt-8">
+                <a href="https://onekey.so/r/LHQKNQ" target="_blank" rel="nofollow noopener noreferrer" class="primary-cta-button inline-block bg-onekey-green text-dark-bg font-bold text-lg py-4 px-10 rounded-lg transition-all duration-300 hover:bg-opacity-90">
+                    立即前往官網購買
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container mx-auto px-4 py-8 border-t border-gray-800">
+        <div class="flex flex-wrap items-center justify-center gap-x-6">
+            <p class="text-sm text-gray-500">使用上方連結購買可享專屬折扣</p>
+            <img src="https://i.postimg.cc/vmYxFZjJ/onekey-logotype-solid-green-on-black-bg-2x.png" alt="OneKey Logo" class="h-8">
+            <p class="text-xs text-gray-600">© <span id="currentYear"></span> OneKey 折扣推廣頁面</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Copy discount code functionality
+        function copyDiscountCode() {
+            copyToClipboard('LHQKNQ');
+            const tooltip = document.getElementById('copyTooltip');
+            tooltip.textContent = '已複製！';
+            tooltip.classList.add('show');
+            
+            setTimeout(() => {
+                tooltip.classList.remove('show');
+                setTimeout(() => {
+                    tooltip.textContent = '點擊複製';
+                }, 300);
+            }, 2000);
+        }
+        
+        function copyFinalDiscountCode() {
+            copyToClipboard('LHQKNQ');
+            const tooltip = document.getElementById('finalCopyTooltip');
+            tooltip.textContent = '已複製！';
+            tooltip.classList.add('show');
+            
+            setTimeout(() => {
+                tooltip.classList.remove('show');
+                setTimeout(() => {
+                    tooltip.textContent = '點擊複製';
+                }, 300);
+            }, 2000);
+        }
+        
+        function copyToClipboard(text) {
+            // Create a temporary input element
+            const input = document.createElement('input');
+            input.style.position = 'absolute';
+            input.style.left = '-9999px';
+            input.value = text;
+            document.body.appendChild(input);
+            
+            // Select and copy the text
+            input.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(input);
+        }
+        
+        // Show tooltip on hover for discount codes
+        document.getElementById('discountCode').addEventListener('mouseenter', function() {
+            document.getElementById('copyTooltip').classList.add('show');
+        });
+        
+        document.getElementById('discountCode').addEventListener('mouseleave', function() {
+            if (document.getElementById('copyTooltip').textContent === '點擊複製') {
+                document.getElementById('copyTooltip').classList.remove('show');
+            }
+        });
+        
+        document.getElementById('finalDiscountCode').addEventListener('mouseenter', function() {
+            document.getElementById('finalCopyTooltip').classList.add('show');
+        });
+        
+        document.getElementById('finalDiscountCode').addEventListener('mouseleave', function() {
+            if (document.getElementById('finalCopyTooltip').textContent === '點擊複製') {
+                document.getElementById('finalCopyTooltip').classList.remove('show');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'968c7ccaa7988288',t:'MTc1NDEyNjMwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
